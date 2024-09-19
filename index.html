@@ -6,19 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
     
-</head>
-<body>
-    <div class="container h-100 bg-danger">
+<body class="bg-danger" style="height: 100%">
+    <div class="container-fluid h-100 bg-danger">
         <div class="row">
-            <div classe="col-6 col-lg-2 bg-dark">
+            <div class="col-6 col-lg-2 bg-dark">
                 MENU
             </div>
-            <div class="col-8 col-lg-2 bg-secondary">
+            <div class="col-6 col-lg-8 bg-secondary">
                 conteudo
             </div>
-            <div class="col bg-info">
+            <div class="col col-lg-2 bg-info">
                 publi
             </div>
+
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
 
     </div>
